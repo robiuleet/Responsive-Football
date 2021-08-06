@@ -1,0 +1,17 @@
+    @media only screen and (max-width: 768px) {
+        
+        .grid-container {
+
+            width: 330px;
+            height: 4458px;
+
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(12,1fr);
+            grid-row-gap: 24px;
+        }
+        
+    }
