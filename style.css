@@ -8,7 +8,69 @@
   main {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
   }
+  /* ------------------
+       Top banner Area
+    -------------------
+   */
+   .top-banner{
+       background-color: #2D25A0;
+       width: 1440px;
+       height: 677px;
+   }
+   .banner-element{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 153px;
+   }
+   .banner-info{
+       margin-top: calc(207px - 153px);
+       margin-left: 156px;
+   }
+  
+   .banner-info h1{
+        color: white;
+        font-size: 64px;
+        line-height: 80px;
+        font-weight: 700px;
+        margin: 0px;
+   }
+   .banner-image{
+       height: 438px;
+       width: 556.01px;
+   }
+ 
+   .banner-image img {
+       width: 100%;
+
+   }
+   .btn{
+       background-color: #E02C6D;
+       color: white;
+       padding: 10px 24px;
+       border: 1px solid transparent;
+       margin-top: 27px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 168px;
+       height: 44px;
+            
+   }
+   .btn p{
+       font-style: 16px;
+       line-height: 24px;
+       font-weight: 500px;
+       margin-right: 10px;
+   }
+   
+  
+ 
+  
+
+
  
   /* ----------------------
       grid container style
@@ -17,14 +79,16 @@
   .grid-container {
  
       width: 1050px;
+      margin-top: 70px;
  
   }
  
   .grid-layout {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 30px;
-      grid-row-gap: 27px
+      grid-template-columns: repeat(3,1fr);
+      
+
+     
   }
  
   .player-bio {
@@ -40,7 +104,6 @@
   .img-info {
       width: 300px;
       height: 256px;
- 
  
   }
  
@@ -67,70 +130,141 @@
       line-height: 26px;
  
   }
-  /* ----------Responsiveness---------*/
   
- @media only screen and (max-width: 600px) {
+  /* =====================
+        Responsiveness
+     =====================
+  */
+  
+@media only screen and (max-width: 600px) {
     
-     /* ----------------------
-     grid container style
-    ----------------------
-    */
-    .grid-container {
+    /* --------------------
+        top banner style
+    -------------------------
+     */
 
-        width: 330px;
+     .top-banner{
+        background-color: #2D25A0;
+        width: 360px;
+        height: 695px;
+    }
+    .banner-element{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+       
+    
+    .banner-info{
+      margin-left: 16px;
+      margin-top: 112px;
         
-
     }
-
-    .grid-layout {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 1fr);
-        grid-column-start: 1;
-        grid-column-end: span 12;
-        grid-row-gap: 24px
+   
+    .banner-info h1{
+         color: white;
+         font-size: 36px;
+         line-height: 50px;
+         font-weight: 700px;
+         margin: 0px;
     }
-
-    .player-bio {
-        box-shadow: 5px 5px 30px lightgray;
-        width: 330px;
-        height: 474px;
-    }
-
-    .player-info {
-        padding: 15px;
-    }
-
-    .img-info {
-        width: 300px;
-        height: 256px;
-
-
-    }
-
-    .img-info img {
-        width: 100%;
-    }
-
-    .info {
-        height: 154px;
-        padding-bottom: 18px;
-    }
-
-    .info p {
-        font-size: 16px;
-        color: #6C6C6C;
-        font-weight: 400px;
-        line-height: 26px;
-        margin-top: 10px;
-        height: 104px;
-    }
-
-    .info h2 {
-        font-size: 16px;
-        line-height: 26px;
-
-    }
+    .banner-image{
     
-    
-  }
+        height: 329px;
+        width: 259.17px;
+        margin: 50px 16px 61.83px 15px;
+        
+    }
+  
+    .banner-image img {
+        width: 329px;
+        height: 259.17px;
+ 
+    }
+    .btn{
+        background-color: #E02C6D;
+        color: white;
+        padding: 10px 24px;
+        border: 1px solid transparent;
+        margin-top: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 168px;
+        height: 44px;
+             
+    }
+    .btn p{
+        font-style: 16px;
+        line-height: 24px;
+        font-weight: 500px;
+        margin-right: 10px;
+    }
+ 
+   
+   
+    /* ----------------------
+    grid container style
+   ----------------------
+   */
+  
+   .grid-container {
+
+       width: 330px;
+       margin-top: 47px;
+       
+
+   }
+
+   .grid-layout {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(12, 1fr);
+       grid-column-start: 1;
+       grid-column-end: span 12;
+       grid-row-gap: 24px
+   }
+
+   .player-bio {
+       box-shadow: 5px 5px 30px lightgray;
+       width: 330px;
+       height: 474px;
+   }
+
+   .player-info {
+       padding: 15px;
+   }
+
+   .img-info {
+       width: 300px;
+       height: 256px;
+
+
+   }
+
+   .img-info img {
+       width: 100%;
+   }
+
+   .info {
+       height: 154px;
+       padding-bottom: 18px;
+   }
+
+   .info p {
+       font-size: 16px;
+       color: #6C6C6C;
+       font-weight: 400px;
+       line-height: 26px;
+       margin-top: 10px;
+       height: 104px;
+   }
+
+   .info h2 {
+       font-size: 16px;
+       line-height: 26px;
+
+   }
+   
+   
+ }
