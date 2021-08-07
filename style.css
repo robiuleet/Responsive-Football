@@ -198,6 +198,7 @@
       width: 483.87px;
       height: 213px;
       margin-top: 158px;
+      margin-bottom: 63px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -447,6 +448,7 @@
         height: 175px;
         margin-right: 18px;
         margin-top: 43px;
+        margin: 43px 18px 187px 18px;
         display: flex;
         justify-content: center;
         flex-direction: column;
